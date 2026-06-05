@@ -125,3 +125,118 @@ Used to remove a resource or record from a web server.
 - DELETE removes data  
 
 These methods form the basis of how clients interact with web applications and APIs.
+
+## HTTP Status Codes
+
+When a server responds to an HTTP request, the first line includes a **status code**. This code tells the client whether the request was successful or if an error occurred.
+
+HTTP status codes are grouped into five categories:
+
+### 1xx - Informational
+These codes indicate that the request has been received and the client should continue sending data.  
+They are rarely used in modern web applications.
+
+### 2xx - Success
+These codes indicate that the request was successfully processed.
+
+### 3xx - Redirection
+These codes indicate that the client must take additional action, such as being redirected to another page or resource.
+
+### 4xx - Client Errors
+These codes indicate that there is an error in the client’s request (e.g., bad syntax, missing data, or lack of permission).
+
+### 5xx - Server Errors
+These codes indicate that the server failed to process a valid request due to an internal issue.
+
+---
+
+## Common HTTP Status Codes
+
+### 200 - OK
+The request was successful, and the server returned the expected response.
+
+### 201 - Created
+A new resource was successfully created (e.g., user account or blog post).
+
+### 301 - Moved Permanently
+The resource has been permanently moved to a new URL.
+
+### 302 - Found
+The resource has temporarily moved to a different URL.
+
+### 400 - Bad Request
+The server could not understand the request due to missing or incorrect data.
+
+### 401 - Unauthorized
+Authentication is required to access this resource.
+
+### 403 - Forbidden
+The client does not have permission to access the resource, even if authenticated.
+
+### 404 - Not Found
+The requested resource does not exist on the server.
+
+### 405 - Method Not Allowed
+The HTTP method used is not supported for this resource.
+
+### 500 - Internal Server Error
+The server encountered an unexpected condition that prevented it from fulfilling the request.
+
+## HTTP Headers
+
+HTTP headers are additional pieces of information sent with HTTP requests and responses. They help the client and server communicate effectively.
+
+Although headers are not strictly required, most web communication depends on them to properly load and interact with websites.
+
+---
+
+## Common Request Headers (Client → Server)
+
+These headers are sent from the client (browser) to the server.
+
+### Host
+Specifies the domain name of the website being requested.  
+This is important because a single server may host multiple websites.
+
+### User-Agent
+Identifies the client browser and version.  
+Servers use this information to optimize how content is displayed.
+
+### Content-Length
+Indicates the size of the request body being sent to the server (e.g., form data).
+
+### Accept-Encoding
+Tells the server which compression methods the client supports (e.g., gzip), allowing faster data transfer.
+
+### Cookie
+Sends stored data back to the server to maintain session information (e.g., login state).
+
+---
+
+## Common Response Headers (Server → Client)
+
+These headers are sent from the server back to the client after processing a request.
+
+### Set-Cookie
+Used by the server to store data on the client’s browser, which will be sent back in future requests.
+
+### Cache-Control
+Defines how long a response can be stored in the browser cache before being requested again.
+
+### Content-Type
+Specifies the type of data being returned (e.g., HTML, JSON, images, PDF).  
+This helps the browser correctly process the response.
+
+### Content-Encoding
+Indicates the compression method used to reduce the size of the response data.
+
+---
+## Key Takeaway
+HTTP headers provide essential metadata that controls how requests and responses are handled, enabling features like authentication, caching, compression, and content formatting.
+
+### 503 - Service Unavailable
+The server is temporarily unable to handle the request due to overload or maintenance.
+
+---
+## Key Takeaway
+HTTP status codes help the client understand the result of a request, whether it was successful, redirected, or failed due to client or server issues.
