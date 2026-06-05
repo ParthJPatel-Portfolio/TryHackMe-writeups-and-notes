@@ -35,6 +35,8 @@ HTTPS operates on port 443 by default.
 | Less secure | More secure |
 | No certificate validation | Uses SSL/TLS certificates |
 
+<img width="805" height="216" alt="image" src="https://github.com/user-attachments/assets/a1c968c1-090a-4451-a8fc-cd01691eea54" />
+
 ## Key Takeaways
 - HTTP is the foundation of web communication.
 - HTTPS secures web traffic using encryption.
