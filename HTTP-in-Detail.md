@@ -75,12 +75,6 @@ Example request information:
 
 <img width="457" height="242" alt="image" src="https://github.com/user-attachments/assets/434a1e0e-21f3-41b5-a1fe-80796df1c5a4" />
 
-Example response information:
-- **HTTP Protocol Version Number that the web server is using** 
-- **Web server software and version number** 
-- **Current date, time and timezone** 
-<img width="432" height="520" alt="image" src="https://github.com/user-attachments/assets/2a7bc517-6b7b-45c8-b881-d53d4b89310f" />
-
 ### HTTP Responses
 
 An HTTP response is returned by the server and contains the requested resource along with metadata.
@@ -93,6 +87,12 @@ A response typically includes:
 - Content type
 - Content length
 - Response body containing the requested content
+
+Example response information:
+- **HTTP Protocol Version Number that the web server is using** 
+- **Web server software and version number** 
+- **Current date, time and timezone** 
+<img width="432" height="520" alt="image" src="https://github.com/user-attachments/assets/2a7bc517-6b7b-45c8-b881-d53d4b89310f" />
 
 ### Key Takeaways
 
