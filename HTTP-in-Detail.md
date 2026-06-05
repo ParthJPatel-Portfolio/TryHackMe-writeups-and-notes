@@ -75,7 +75,10 @@ Example request information:
 
 <img width="457" height="242" alt="image" src="https://github.com/user-attachments/assets/434a1e0e-21f3-41b5-a1fe-80796df1c5a4" />
 
-Example response information: 
+Example response information:
+- **HTTP Protocol Version Number that the web server is using** 
+- **Web server software and version number** 
+- **Current date, time and timezone** 
 <img width="432" height="520" alt="image" src="https://github.com/user-attachments/assets/2a7bc517-6b7b-45c8-b881-d53d4b89310f" />
 
 ### HTTP Responses
@@ -97,3 +100,28 @@ A response typically includes:
 - HTTP requests are sent from clients to servers to retrieve resources.
 - HTTP responses contain status information and the requested content.
 - Headers provide additional information that helps clients and servers communicate effectively.
+
+## HTTP Methods
+
+HTTP methods define the action a client wants to perform when communicating with a web server. Different methods are used depending on whether data is being retrieved, created, updated, or deleted.
+
+### GET
+Used to request and retrieve data from a web server.  
+It does not modify any data on the server.
+
+### POST
+Used to send data to a web server, often to create a new resource or submit form data.
+
+### PUT
+Used to update existing data on a web server or create a resource if it does not already exist.
+
+### DELETE
+Used to remove a resource or record from a web server.
+
+## Key Takeaway
+- GET retrieves data  
+- POST sends new data  
+- PUT updates existing data  
+- DELETE removes data  
+
+These methods form the basis of how clients interact with web applications and APIs.
