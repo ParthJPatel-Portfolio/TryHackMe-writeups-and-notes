@@ -35,9 +35,60 @@ HTTPS operates on port 443 by default.
 | Less secure | More secure |
 | No certificate validation | Uses SSL/TLS certificates |
 
-<img width="805" height="216" alt="image" src="https://github.com/user-attachments/assets/a1c968c1-090a-4451-a8fc-cd01691eea54" />
-
 ## Key Takeaways
 - HTTP is the foundation of web communication.
 - HTTPS secures web traffic using encryption.
 - Modern websites should use HTTPS to protect user data and verify website authenticity.
+
+## URLs, HTTP Requests, and Responses
+
+### What is a URL?
+
+A URL (Uniform Resource Locator) specifies how and where a resource on the internet can be accessed. It provides the browser with the information needed to locate web pages, images, videos, and other content.
+
+### Components of a URL
+
+- **Scheme** – Protocol used for communication (e.g., HTTP, HTTPS, FTP).
+- **User Information** – Optional username and password for authentication.
+- **Host** – Domain name or IP address of the server.
+- **Port** – Communication port (typically 80 for HTTP and 443 for HTTPS).
+- **Path** – Location of the requested resource on the server.
+- **Query String** – Additional data passed to the server (e.g., `?id=1`).
+- **Fragment** – References a specific section within a webpage (e.g., `#section1`).
+
+<img width="805" height="216" alt="image" src="https://github.com/user-attachments/assets/a1c968c1-090a-4451-a8fc-cd01691eea54" />
+
+### HTTP Requests
+
+An HTTP request is sent by a client (browser) to a web server to request resources.
+
+A request typically contains:
+- An HTTP method (e.g., GET)
+- The requested resource path
+- The HTTP version
+- Headers containing additional information such as the target host, browser type, and referring page
+
+Example request information:
+- **Host** identifies the website being requested.
+- **User-Agent** identifies the client application.
+- **Referer** indicates the page that directed the user to the resource.
+
+### HTTP Responses
+
+An HTTP response is returned by the server and contains the requested resource along with metadata.
+
+A response typically includes:
+- HTTP version
+- Status code (e.g., 200 OK)
+- Server information
+- Date and time
+- Content type
+- Content length
+- Response body containing the requested content
+
+### Key Takeaways
+
+- URLs tell browsers how to locate and access resources on the internet.
+- HTTP requests are sent from clients to servers to retrieve resources.
+- HTTP responses contain status information and the requested content.
+- Headers provide additional information that helps clients and servers communicate effectively.
