@@ -42,3 +42,11 @@ WAFs help protect websites from attacks by filtering and blocking harmful reques
 <img width="857" height="212" alt="image" src="https://github.com/user-attachments/assets/9308fd22-9c59-4ec5-a42f-1699e1621140" />
 
 These technologies work together to make modern websites faster, more scalable, and more secure.
+
+---
+# The order of steps taken when requesting a web page in a browser
+1. Request the website tryhackme.com in the browser
+2. Check the local cache for IP to see if a similar request has been made recently. 
+3. If the request is not found locally, the next order of action would be to check the recursive dns server for the IP address.
+4. The DNS server will query the root server to find the authoriative DNS server.
+5. 
