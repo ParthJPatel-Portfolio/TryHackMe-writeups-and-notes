@@ -12,5 +12,33 @@ However, there are additional steps and components involved in this process that
 
 ----
 # Other Components
+Modern websites rely on more than just a web server to provide a fast, reliable, and secure experience.
 
+# Load Balancers
+Load balancers act like traffic controllers, distributing incoming requests across multiple servers to prevent overload and ensure users can still access the website if a server fails.
 
+# Content Delivery Networks
+CDNs (Content Delivery Networks) improve performance by storing copies of static content, such as images, videos, CSS, and JavaScript, on servers located around the world, allowing users to receive content from the nearest location.
+
+# Databases
+Databases serve as the website's memory, storing and retrieving important information such as user accounts, settings, and application data.
+
+# Web Application Firewall
+Meanwhile, WAFs (Web Application Firewalls) act as security guards, inspecting incoming traffic and blocking malicious requests before they reach the web server.
+
+# Key Findings
+Load balancers improve website performance and availability by distributing traffic across multiple servers.
+
+Health checks allow load balancers to detect failed servers and automatically reroute traffic.
+
+<img width="892" height="437" alt="image" src="https://github.com/user-attachments/assets/7252840e-2885-4ed2-97b4-0f4334d8b620" />
+
+CDNs reduce loading times by delivering content from servers closest to the user.
+
+Databases are responsible for storing and managing website data efficiently.
+
+WAFs help protect websites from attacks by filtering and blocking harmful requests.
+
+<img width="857" height="212" alt="image" src="https://github.com/user-attachments/assets/9308fd22-9c59-4ec5-a42f-1699e1621140" />
+
+These technologies work together to make modern websites faster, more scalable, and more secure.
