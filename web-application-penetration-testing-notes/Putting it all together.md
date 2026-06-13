@@ -49,4 +49,10 @@ These technologies work together to make modern websites faster, more scalable, 
 2. Check the local cache for IP to see if a similar request has been made recently. 
 3. If the request is not found locally, the next order of action would be to check the recursive dns server for the IP address.
 4. The DNS server will query the root server to find the authoriative DNS server.
-5. 
+5. The Authoriative DNS server advises the IP address for the website.
+6. The request passes through a Web Application Firewall.
+7. Then, the request passes through a load balancer.
+8. A connection to the web server is made through port 80 or 443.
+9. After that, the web server receives the GET request.
+10. The web application talks to the database to see if it needs any dynamic content or for authentication.
+11. Finally, the request is sent back to the browser to render the HTML into a website that can be viewed.
